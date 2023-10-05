@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "litestar-ddtrace-repro"
+version = "0.1.0"
+description = ""
+authors = ["Anden Acitelli <anden@akk.io>"]
+readme = "README.md"
+packages = [{include = "litestar_ddtrace_repro"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+litestar = "^2.1.1"
+ddtrace = "^2.0.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
